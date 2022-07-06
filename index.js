@@ -1,7 +1,7 @@
 const express = require ('express');
 const { MongoClient } = require('mongodb');
 const app = express ();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 const url = 'mongodb+srv://lynx:epok2562002@cluster0.osrmk.mongodb.net/test';
 const client = new MongoClient(url);
